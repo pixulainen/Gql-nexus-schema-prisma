@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt';
 
-const hashPassword = (password : string) => {
+const hashPassword = (password) => {
 	if (password.length < 8) {
 		throw new Error('Password must be 8 characters or longer.');
 	}
